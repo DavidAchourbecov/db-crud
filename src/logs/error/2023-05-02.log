@@ -1,0 +1,12 @@
+2023-05-02 09:53:03 error: uncaughtException: auth_service_1.default is not a constructor
+TypeError: auth_service_1.default is not a constructor
+    at new AuthMiddleware (D:\bacnend -db\express-prisma-api\src\middlewares\auth.middleware.ts:9:26)
+    at new AuthRoute (D:\bacnend -db\express-prisma-api\src\routes\auth_.route.ts:11:29)
+    at Object.<anonymous> (D:\bacnend -db\express-prisma-api\src\server.ts:10:57)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Module.m._compile (D:\bacnend -db\express-prisma-api\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\bacnend -db\express-prisma-api\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)

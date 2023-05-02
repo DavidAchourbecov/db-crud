@@ -1,0 +1,87 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+    provider = "mysql"
+    //url      = env("DATABASE_URL")
+    url      = "mysql://root:1234@127.0.0.1:3306/tools_to_go"
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model User {
+    id           Int     @id @default(autoincrement())
+    email        String  @unique
+    password     String
+    role         Role    @default(USER)
+    refreshToken String? @unique
+}
+
+model Users {
+    id                   Int              @id @default(autoincrement())
+    email                String           @unique
+    password             String
+    token                String           @unique
+    fullName             String
+    phone                String           @unique
+    city                 String
+    expoToken            String
+    imageProfile         String?          @db.Text()
+    isAdmin              Boolean          @default(false)
+    products             products[]
+    productActionsRenter productActions[] @relation("Renter")
+    messagesSender       messages[]       @relation("Sender")
+    messagesReceiver     messages[]       @relation("Receiver")
+}
+
+model products {
+    id             Int              @id @default(autoincrement())
+    name           String
+    price          Float
+    description    String
+    image          String           @db.Text()
+    category       String
+    postDate       DateTime         @default(now())
+    user           Users            @relation(fields: [userId], references: [id])
+    userId         Int // add this field
+    productImages  productImages[]
+    productId      Int
+    productActions productActions[] // add this field
+    messages       messages[]
+}
+
+model productImages {
+    id        Int      @id @default(autoincrement())
+    image     String   @db.Text()
+    product   products @relation(fields: [productId], references: [id])
+    productId Int // add this field
+}
+
+model productActions {
+    id           Int      @id @default(autoincrement())
+    dateToRent   DateTime
+    dateFromRent DateTime
+    product      products @relation(fields: [productId], references: [id])
+    productId    Int
+    price        Float
+    userRenter   Users    @relation("Renter", fields: [userIdRenter], references: [id])
+    userIdRenter Int
+}
+
+model messages {
+    id         Int      @id @default(autoincrement())
+    message    String
+    productId  Int
+    receiverId Int
+    senderId   Int
+    product    products @relation(fields: [productId], references: [id])
+    receiver   Users    @relation("Receiver", fields: [receiverId], references: [id])
+    sender     Users    @relation("Sender", fields: [senderId], references: [id])
+}
+
+enum Role {
+    USER
+    ADMIN
+}
