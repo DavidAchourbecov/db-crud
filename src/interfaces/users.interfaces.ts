@@ -13,6 +13,11 @@ export interface SignupUser{
 
 }
 
+export interface LoginUser{
+       email: string;
+       password: string;
+}
+
 /*
 
    id                   Int              @id @default(autoincrement())

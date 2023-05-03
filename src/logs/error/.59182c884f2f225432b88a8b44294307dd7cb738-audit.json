@@ -9,6 +9,11 @@
             "date": 1683010021750,
             "name": "D:\\bacnend -db\\express-prisma-api\\src\\logs\\error\\2023-05-02.log",
             "hash": "62fbba8b0554b4ccef672b881f536853f2eb4fd8a5f7e6026a380bb3f500687c"
+        },
+        {
+            "date": 1683104505262,
+            "name": "D:\\bacnend -db\\express-prisma-api\\src\\logs\\error\\2023-05-03.log",
+            "hash": "4b4a1851156021e787b2c624cb2a4f52eeb180e183a4ab623e5bb056277e1b16"
         }
     ],
     "hashType": "sha256"

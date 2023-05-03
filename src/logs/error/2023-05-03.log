@@ -1,0 +1,213 @@
+2023-05-03 16:19:58 error: [POST] /auth/signup >> StatusCode:: 400, Message:: 
+Invalid `this.users.create()` invocation in
+D:\bacnend -db\express-prisma-api\src\services\users.service.ts:49:60
+
+  46 delete user.id;
+  47 //delete user.expoToken;
+  48 
+→ 49 const createUserData: Users = await this.users.create(
+The provided value for the column is too long for the column's type. Column: token
+2023-05-03 16:21:48 error: [POST] /auth/signup >> StatusCode:: 400, Message:: 
+Invalid `this.users.create()` invocation in
+D:\bacnend -db\express-prisma-api\src\services\users.service.ts:49:60
+
+  46 delete user.id;
+  47 //delete user.expoToken;
+  48 
+→ 49 const createUserData: Users = await this.users.create(
+The provided value for the column is too long for the column's type. Column: token
+2023-05-03 16:23:57 error: [POST] /auth/signup >> StatusCode:: 400, Message:: 
+Invalid `this.users.create()` invocation in
+D:\bacnend -db\express-prisma-api\src\services\users.service.ts:49:60
+
+  46 delete user.id;
+  47 //delete user.expoToken;
+  48 
+→ 49 const createUserData: Users = await this.users.create(
+The provided value for the column is too long for the column's type. Column: token
+2023-05-03 16:25:07 error: [POST] /auth/signup >> StatusCode:: 400, Message:: 
+Invalid `this.users.create()` invocation in
+D:\bacnend -db\express-prisma-api\src\services\users.service.ts:49:60
+
+  46 delete user.id;
+  47 delete user.expoToken;
+  48 
+→ 49 const createUserData: Users = await this.users.create({
+       data: {
+         email: 'effi@gamil.cmo',
+         password: '$2b$10$I9zinX9YzW3Rdk0RWX7akuzfZJxB3NzgxT7HY0Ja83kIsMAAI/Xq.',
+         token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVmZmlAZ2FtaWwuY21vIiwiaW1hZ2VQcm9maWxlIjoiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFEQUFBQUF3Q0FNQUFBQmczQW0xQUFBQVkxQk1WRVVBZWxyeStQY1BnbVFlaVc1YnFaWGo4TzJYeWJ6VDZPUzEyTkI1dWFscXNaNTV1YWd0a25jOG1ZR0l3YkxVNk9PMTJkQ20wY2JVNk9ROG1vRkxvWXNlaW03RTROcE1vWXN0a1hmajhlM1Q2T1BpOE8yMTJjKzEyTTlhcVpVOW1ZR0l3TEwreFoyb0FBQUEya2xFUVZSNFh1M1VONWJETUF3RVVBd1lsS056M0wzL0tkMm9rRUdKRUN1NzhLK0pOeUNLb2EvMXcrV1FBVmx1RFcxU09FeTZnblNteDh4UkRURWozblJNY1I1Q1RsRVdnUjNGakVCU3hCbElpeWl4b05TK0xQbVBEbFJZVU5HNkp2VktmRUhnU2pHVnRwSEVXUkRBRkZXTHBXNDFLZllYOFY1MW1HMzFPTkFXOWo0OWIyZ3JidmJQbXVrN3NHMkhiUHEyTytidHljUWJyRWRndmMrTWQxam1sMGE0Y0ZoWGtIUWVFZFdKRU91Z2NGYjBsMjQyY2NJbU8xSEFLbWRFVjZpbTF2eURvQzNWQTBrUkJnazRQS2wrMmhZSi9zV05WSjVlK1EwSS9ValZnZTBBQUFBQVNVVk9SSzVDWUlJPSIsImlhdCI6MTY4MzEyMDI4NywiZXhwIjoxNjgzMjA2Njg3fQ.CzXcO7H-DGQshYCEmwWDORXqiK4lWKsKoUmUy8rMNSk',
+         fullName: 'effi',
+         phone: '0525478',
+         city: 'tel aviv',
+         imageProfile: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAY1BMVEUAelry+PcPgmQeiW5bqZXj8O2XybzT6OS12NB5ualqsZ55uagtknc8mYGIwbLU6OO12dCm0cbU6OQ8moFLoYseim7E4NpMoYstkXfj8e3T6OPi8O212c+12M9aqZU9mYGIwLL+xZ2oAAAA2klEQVR4Xu3UN5bDMAwEUAwYlKNz3L3/Kd2okEGJECu78K+JNyCKoa/1w+WQAVluDW1SOEy6gnSmx8xRDTEj3nRMcR5CTlEWgR3FjEBSxBlIiyixoNS+LPmPDlRYUNG6JvVKfEHgSjGVtpHEWRDAFFWLpW41KfYX8V51mG31ONAW9j49b2grbvbPmuk7sG2HbPq2O+btycQbrEdgvc+Md1jml0a4cFhXkHQeEdWJEOugcFb0l242ccImO1HAKmdEV6im1vyDoC3VA0kRBgk4PKl+2hYJ/sWNVJ5e+Q0I/UjVge0AAAAASUVORK5CYII=',
+         isAdmin: false,
+     +   expoToken: String,
+     ?   products?: {
+     ?     create?: productsCreateWithoutUserInput | productsCreateWithoutUserInput | productsUncheckedCreateWithoutUserInput | productsUncheckedCreateWithoutUserInput,
+     ?     connectOrCreate?: productsCreateOrConnectWithoutUserInput | productsCreateOrConnectWithoutUserInput,
+     ?     createMany?: productsCreateManyUserInputEnvelope,
+     ?     connect?: productsWhereUniqueInput | productsWhereUniqueInput
+     ?   },
+     ?   productActionsRenter?: {
+     ?     create?: productActionsCreateWithoutUserRenterInput | productActionsCreateWithoutUserRenterInput | productActionsUncheckedCreateWithoutUserRenterInput | productActionsUncheckedCreateWithoutUserRenterInput,
+     ?     connectOrCreate?: productActionsCreateOrConnectWithoutUserRenterInput | productActionsCreateOrConnectWithoutUserRenterInput,
+     ?     createMany?: productActionsCreateManyUserRenterInputEnvelope,
+     ?     connect?: productActionsWhereUniqueInput | productActionsWhereUniqueInput
+     ?   },
+     ?   messagesSender?: {
+     ?     create?: messagesCreateWithoutSenderInput | messagesCreateWithoutSenderInput | messagesUncheckedCreateWithoutSenderInput | messagesUncheckedCreateWithoutSenderInput,
+     ?     connectOrCreate?: messagesCreateOrConnectWithoutSenderInput | messagesCreateOrConnectWithoutSenderInput,
+     ?     createMany?: messagesCreateManySenderInputEnvelope,
+     ?     connect?: messagesWhereUniqueInput | messagesWhereUniqueInput
+     ?   },
+     ?   messagesReceiver?: {
+     ?     create?: messagesCreateWithoutReceiverInput | messagesCreateWithoutReceiverInput | messagesUncheckedCreateWithoutReceiverInput | messagesUncheckedCreateWithoutReceiverInput,
+     ?     connectOrCreate?: messagesCreateOrConnectWithoutReceiverInput | messagesCreateOrConnectWithoutReceiverInput,
+     ?     createMany?: messagesCreateManyReceiverInputEnvelope,
+     ?     connect?: messagesWhereUniqueInput | messagesWhereUniqueInput
+     ?   }
+       }
+     })
+
+Argument expoToken for data.expoToken is missing.
+
+Note: Lines with + are required, lines with ? are optional.
+
+2023-05-03 16:25:32 error: [POST] /auth/signup >> StatusCode:: 400, Message:: 
+Invalid `this.users.create()` invocation in
+D:\bacnend -db\express-prisma-api\src\services\users.service.ts:49:60
+
+  46 // delete user.id;
+  47 // delete user.expoToken;
+  48 
+→ 49  const createUserData: Users = await this.users.create({
+        data: {
+          id: null,
+          ~~
+          email: 'effi@gamil.cmo',
+          password: '$2b$10$372CoVSWwIA1NUwWDr3Pu.RVrGZkzZb2YKOLRWpCwDJsH6QiQftwS',
+          token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVmZmlAZ2FtaWwuY21vIiwiaW1hZ2VQcm9maWxlIjoiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFEQUFBQUF3Q0FNQUFBQmczQW0xQUFBQVkxQk1WRVVBZWxyeStQY1BnbVFlaVc1YnFaWGo4TzJYeWJ6VDZPUzEyTkI1dWFscXNaNTV1YWd0a25jOG1ZR0l3YkxVNk9PMTJkQ20wY2JVNk9ROG1vRkxvWXNlaW03RTROcE1vWXN0a1hmajhlM1Q2T1BpOE8yMTJjKzEyTTlhcVpVOW1ZR0l3TEwreFoyb0FBQUEya2xFUVZSNFh1M1VONWJETUF3RVVBd1lsS056M0wzL0tkMm9rRUdKRUN1NzhLK0pOeUNLb2EvMXcrV1FBVmx1RFcxU09FeTZnblNteDh4UkRURWozblJNY1I1Q1RsRVdnUjNGakVCU3hCbElpeWl4b05TK0xQbVBEbFJZVU5HNkp2VktmRUhnU2pHVnRwSEVXUkRBRkZXTHBXNDFLZllYOFY1MW1HMzFPTkFXOWo0OWIyZ3JidmJQbXVrN3NHMkhiUHEyTytidHljUWJyRWRndmMrTWQxam1sMGE0Y0ZoWGtIUWVFZFdKRU91Z2NGYjBsMjQyY2NJbU8xSEFLbWRFVjZpbTF2eURvQzNWQTBrUkJnazRQS2wrMmhZSi9zV05WSjVlK1EwSS9ValZnZTBBQUFBQVNVVk9SSzVDWUlJPSIsImlhdCI6MTY4MzEyMDMzMiwiZXhwIjoxNjgzMjA2NzMyfQ.24c2MLv0abbyDGJFBYKGlPNUdauk9Q-XHRCindnuaQo',
+          fullName: 'effi',
+          phone: '0525478',
+          city: 'tel aviv',
+          expoToken: '',
+          imageProfile: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAY1BMVEUAelry+PcPgmQeiW5bqZXj8O2XybzT6OS12NB5ualqsZ55uagtknc8mYGIwbLU6OO12dCm0cbU6OQ8moFLoYseim7E4NpMoYstkXfj8e3T6OPi8O212c+12M9aqZU9mYGIwLL+xZ2oAAAA2klEQVR4Xu3UN5bDMAwEUAwYlKNz3L3/Kd2okEGJECu78K+JNyCKoa/1w+WQAVluDW1SOEy6gnSmx8xRDTEj3nRMcR5CTlEWgR3FjEBSxBlIiyixoNS+LPmPDlRYUNG6JvVKfEHgSjGVtpHEWRDAFFWLpW41KfYX8V51mG31ONAW9j49b2grbvbPmuk7sG2HbPq2O+btycQbrEdgvc+Md1jml0a4cFhXkHQeEdWJEOugcFb0l242ccImO1HAKmdEV6im1vyDoC3VA0kRBgk4PKl+2hYJ/sWNVJ5e+Q0I/UjVge0AAAAASUVORK5CYII=',
+          isAdmin: false
+        }
+      })
+
+Unknown arg `id` in data.id for type UsersCreateInput. Available args:
+
+type UsersCreateInput {
+  email: String
+  password: String
+  token: String
+  fullName: String
+  phone: String
+  city: String
+  expoToken: String
+  imageProfile?: String | Null
+  isAdmin?: Boolean
+  products?: productsCreateNestedManyWithoutUserInput
+  productActionsRenter?: productActionsCreateNestedManyWithoutUserRenterInput
+  messagesSender?: messagesCreateNestedManyWithoutSenderInput
+  messagesReceiver?: messagesCreateNestedManyWithoutReceiverInput
+}
+
+
+2023-05-03 16:25:58 error: [POST] /auth/signup >> StatusCode:: 400, Message:: 
+Invalid `this.users.create()` invocation in
+D:\bacnend -db\express-prisma-api\src\services\users.service.ts:49:60
+
+  46 // delete user.id;
+  47 // delete user.expoToken;
+  48 
+→ 49  const createUserData: Users = await this.users.create({
+        data: {
+          id: null,
+          ~~
+          email: 'effi@gamil.cmo',
+          password: '$2b$10$JQVAmK.CctFx.dBgVdbwW.B46NWzYZAAvoHb5WAvh62WL3Ly4O/bK',
+          token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVmZmlAZ2FtaWwuY21vIiwiaW1hZ2VQcm9maWxlIjoiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFEQUFBQUF3Q0FNQUFBQmczQW0xQUFBQVkxQk1WRVVBZWxyeStQY1BnbVFlaVc1YnFaWGo4TzJYeWJ6VDZPUzEyTkI1dWFscXNaNTV1YWd0a25jOG1ZR0l3YkxVNk9PMTJkQ20wY2JVNk9ROG1vRkxvWXNlaW03RTROcE1vWXN0a1hmajhlM1Q2T1BpOE8yMTJjKzEyTTlhcVpVOW1ZR0l3TEwreFoyb0FBQUEya2xFUVZSNFh1M1VONWJETUF3RVVBd1lsS056M0wzL0tkMm9rRUdKRUN1NzhLK0pOeUNLb2EvMXcrV1FBVmx1RFcxU09FeTZnblNteDh4UkRURWozblJNY1I1Q1RsRVdnUjNGakVCU3hCbElpeWl4b05TK0xQbVBEbFJZVU5HNkp2VktmRUhnU2pHVnRwSEVXUkRBRkZXTHBXNDFLZllYOFY1MW1HMzFPTkFXOWo0OWIyZ3JidmJQbXVrN3NHMkhiUHEyTytidHljUWJyRWRndmMrTWQxam1sMGE0Y0ZoWGtIUWVFZFdKRU91Z2NGYjBsMjQyY2NJbU8xSEFLbWRFVjZpbTF2eURvQzNWQTBrUkJnazRQS2wrMmhZSi9zV05WSjVlK1EwSS9ValZnZTBBQUFBQVNVVk9SSzVDWUlJPSIsImlhdCI6MTY4MzEyMDM1OCwiZXhwIjoxNjgzMjA2NzU4fQ.AOXRgB-TcxNicKE9k3DX6g-8xjqKT7aAHnQfGaEooBs',
+          fullName: 'effi',
+          phone: '0525478',
+          city: 'tel aviv',
+          expoToken: '',
+          imageProfile: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAY1BMVEUAelry+PcPgmQeiW5bqZXj8O2XybzT6OS12NB5ualqsZ55uagtknc8mYGIwbLU6OO12dCm0cbU6OQ8moFLoYseim7E4NpMoYstkXfj8e3T6OPi8O212c+12M9aqZU9mYGIwLL+xZ2oAAAA2klEQVR4Xu3UN5bDMAwEUAwYlKNz3L3/Kd2okEGJECu78K+JNyCKoa/1w+WQAVluDW1SOEy6gnSmx8xRDTEj3nRMcR5CTlEWgR3FjEBSxBlIiyixoNS+LPmPDlRYUNG6JvVKfEHgSjGVtpHEWRDAFFWLpW41KfYX8V51mG31ONAW9j49b2grbvbPmuk7sG2HbPq2O+btycQbrEdgvc+Md1jml0a4cFhXkHQeEdWJEOugcFb0l242ccImO1HAKmdEV6im1vyDoC3VA0kRBgk4PKl+2hYJ/sWNVJ5e+Q0I/UjVge0AAAAASUVORK5CYII=',
+          isAdmin: false
+        }
+      })
+
+Unknown arg `id` in data.id for type UsersCreateInput. Available args:
+
+type UsersCreateInput {
+  email: String
+  password: String
+  token: String
+  fullName: String
+  phone: String
+  city: String
+  expoToken: String
+  imageProfile?: String | Null
+  isAdmin?: Boolean
+  products?: productsCreateNestedManyWithoutUserInput
+  productActionsRenter?: productActionsCreateNestedManyWithoutUserRenterInput
+  messagesSender?: messagesCreateNestedManyWithoutSenderInput
+  messagesReceiver?: messagesCreateNestedManyWithoutReceiverInput
+}
+
+
+2023-05-03 16:26:20 error: [POST] /auth/signup >> StatusCode:: 400, Message:: 
+Invalid `this.users.create()` invocation in
+D:\bacnend -db\express-prisma-api\src\services\users.service.ts:49:60
+
+  46 // delete user.id;
+  47 // delete user.expoToken;
+  48 
+→ 49  const createUserData: Users = await this.users.create({
+        data: {
+          id: null,
+          ~~
+          email: 'effi@gamil.cmo',
+          password: '$2b$10$BqU.ndrObfvFt0wJc606QeqGgdjCTL50RTlD6PmEU1IqutQph4X1W',
+          token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVmZmlAZ2FtaWwuY21vIiwiaW1hZ2VQcm9maWxlIjoiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFEQUFBQUF3Q0FNQUFBQmczQW0xQUFBQVkxQk1WRVVBZWxyeStQY1BnbVFlaVc1YnFaWGo4TzJYeWJ6VDZPUzEyTkI1dWFscXNaNTV1YWd0a25jOG1ZR0l3YkxVNk9PMTJkQ20wY2JVNk9ROG1vRkxvWXNlaW03RTROcE1vWXN0a1hmajhlM1Q2T1BpOE8yMTJjKzEyTTlhcVpVOW1ZR0l3TEwreFoyb0FBQUEya2xFUVZSNFh1M1VONWJETUF3RVVBd1lsS056M0wzL0tkMm9rRUdKRUN1NzhLK0pOeUNLb2EvMXcrV1FBVmx1RFcxU09FeTZnblNteDh4UkRURWozblJNY1I1Q1RsRVdnUjNGakVCU3hCbElpeWl4b05TK0xQbVBEbFJZVU5HNkp2VktmRUhnU2pHVnRwSEVXUkRBRkZXTHBXNDFLZllYOFY1MW1HMzFPTkFXOWo0OWIyZ3JidmJQbXVrN3NHMkhiUHEyTytidHljUWJyRWRndmMrTWQxam1sMGE0Y0ZoWGtIUWVFZFdKRU91Z2NGYjBsMjQyY2NJbU8xSEFLbWRFVjZpbTF2eURvQzNWQTBrUkJnazRQS2wrMmhZSi9zV05WSjVlK1EwSS9ValZnZTBBQUFBQVNVVk9SSzVDWUlJPSIsImlhdCI6MTY4MzEyMDM2OCwiZXhwIjoxNjgzMjA2NzY4fQ.2pp9zVt30a36J3NRoqEXCRuZi_rpfs3OV90AyqLH6LY',
+          fullName: 'effi',
+          phone: '0525478',
+          city: 'tel aviv',
+          expoToken: '',
+          imageProfile: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAY1BMVEUAelry+PcPgmQeiW5bqZXj8O2XybzT6OS12NB5ualqsZ55uagtknc8mYGIwbLU6OO12dCm0cbU6OQ8moFLoYseim7E4NpMoYstkXfj8e3T6OPi8O212c+12M9aqZU9mYGIwLL+xZ2oAAAA2klEQVR4Xu3UN5bDMAwEUAwYlKNz3L3/Kd2okEGJECu78K+JNyCKoa/1w+WQAVluDW1SOEy6gnSmx8xRDTEj3nRMcR5CTlEWgR3FjEBSxBlIiyixoNS+LPmPDlRYUNG6JvVKfEHgSjGVtpHEWRDAFFWLpW41KfYX8V51mG31ONAW9j49b2grbvbPmuk7sG2HbPq2O+btycQbrEdgvc+Md1jml0a4cFhXkHQeEdWJEOugcFb0l242ccImO1HAKmdEV6im1vyDoC3VA0kRBgk4PKl+2hYJ/sWNVJ5e+Q0I/UjVge0AAAAASUVORK5CYII=',
+          isAdmin: false
+        }
+      })
+
+Unknown arg `id` in data.id for type UsersCreateInput. Available args:
+
+type UsersCreateInput {
+  email: String
+  password: String
+  token: String
+  fullName: String
+  phone: String
+  city: String
+  expoToken: String
+  imageProfile?: String | Null
+  isAdmin?: Boolean
+  products?: productsCreateNestedManyWithoutUserInput
+  productActionsRenter?: productActionsCreateNestedManyWithoutUserRenterInput
+  messagesSender?: messagesCreateNestedManyWithoutSenderInput
+  messagesReceiver?: messagesCreateNestedManyWithoutReceiverInput
+}
+
+
+2023-05-03 16:26:46 error: [POST] /auth/signup >> StatusCode:: 400, Message:: 
+Invalid `this.users.create()` invocation in
+D:\bacnend -db\express-prisma-api\src\services\users.service.ts:49:60
+
+  46 delete user.id;
+  47 // delete user.expoToken;
+  48 
+→ 49  const createUserData: Users = await this.users.create(
+The provided value for the column is too long for the column's type. Column: token
+2023-05-03 16:39:29 error: [POST] /auth/signup >> StatusCode:: 400, Message:: This email effi@gamil.cmo already exists
+2023-05-03 16:40:21 error: [POST] /auth/login >> StatusCode:: 400, Message:: Email or password is wrong
